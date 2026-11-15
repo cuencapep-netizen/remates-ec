@@ -1,0 +1,246 @@
+{
+  "categorias": [
+    {
+      "nombre": "Mueble",
+      "subtipos": [
+        "Vehículo",
+        "Derechos y Acciones",
+        "Lote"
+      ],
+      "muestra_subtipo": "Vehículo",
+      "muestra": [
+        {
+          "n": 1,
+          "codigo": "EC-RJ-157130",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "GUAYAS GUAYAQUIL",
+          "tipo": "Terrestre Liviano",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "4,620.00",
+          "avaluo_calculado": "4,620.00 (100%)"
+        },
+        {
+          "n": 2,
+          "codigo": "EC-RJ-158318",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "BOLÍVAR SAN MIGUEL",
+          "tipo": "Terrestre Liviano",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "4,299.85",
+          "avaluo_calculado": "4,299.85 (100%)"
+        },
+        {
+          "n": 3,
+          "codigo": "EC-RJ-157493",
+          "fecha_remate": "nov, 17 2026",
+          "localizacion": "AZUAY CUENCA",
+          "tipo": "Terrestre Liviano",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "25,000.00",
+          "avaluo_calculado": "25,000.00 (100%)"
+        },
+        {
+          "n": 4,
+          "codigo": "EC-RJ-157845",
+          "fecha_remate": "nov, 17 2026",
+          "localizacion": "TUNGURAHUA AMBATO",
+          "tipo": "Terrestre Pesado",
+          "bienes": "1",
+          "senalamiento": "Tercer Señalamiento",
+          "avaluo_pericial": "21,889.97",
+          "avaluo_calculado": "16,417.48 (75%)"
+        },
+        {
+          "n": 5,
+          "codigo": "EC-RJ-157921",
+          "fecha_remate": "nov, 17 2026",
+          "localizacion": "NAPO QUIJOS",
+          "tipo": "Terrestre Liviano",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "9,762.34",
+          "avaluo_calculado": "9,762.34 (100%)"
+        },
+        {
+          "n": 6,
+          "codigo": "EC-RJ-156465",
+          "fecha_remate": "nov, 18 2026",
+          "localizacion": "EL ORO HUAQUILLAS",
+          "tipo": "Terrestre Pesado",
+          "bienes": "1",
+          "senalamiento": "Otro Señalamiento",
+          "avaluo_pericial": "15,000.00",
+          "avaluo_calculado": "11,250.00 (75%)"
+        },
+        {
+          "n": 7,
+          "codigo": "EC-RJ-157469",
+          "fecha_remate": "nov, 18 2026",
+          "localizacion": "AZUAY SANTA ISABEL",
+          "tipo": "Terrestre Pesado",
+          "bienes": "1",
+          "senalamiento": "Tercer Señalamiento",
+          "avaluo_pericial": "8,186.83",
+          "avaluo_calculado": "6,140.12 (75%)"
+        },
+        {
+          "n": 8,
+          "codigo": "EC-RJ-158063",
+          "fecha_remate": "nov, 18 2026",
+          "localizacion": "EL ORO MACHALA",
+          "tipo": "Terrestre Liviano",
+          "bienes": "1",
+          "senalamiento": "Otro Señalamiento",
+          "avaluo_pericial": "6,560.00",
+          "avaluo_calculado": "4,920.00 (75%)"
+        },
+        {
+          "n": 9,
+          "codigo": "EC-RJ-157563",
+          "fecha_remate": "nov, 19 2026",
+          "localizacion": "IMBABURA IBARRA",
+          "tipo": "Terrestre Liviano",
+          "bienes": "1",
+          "senalamiento": "Tercer Señalamiento",
+          "avaluo_pericial": "9,418.92",
+          "avaluo_calculado": "7,064.19 (75%)"
+        },
+        {
+          "n": 10,
+          "codigo": "EC-RJ-157631",
+          "fecha_remate": "nov, 19 2026",
+          "localizacion": "TUNGURAHUA AMBATO",
+          "tipo": "Terrestre Liviano",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "3,800.00",
+          "avaluo_calculado": "3,800.00 (100%)"
+        }
+      ]
+    },
+    {
+      "nombre": "Inmueble",
+      "subtipos": [
+        "Urbano",
+        "Rural"
+      ],
+      "muestra_subtipo": "Urbano",
+      "muestra": [
+        {
+          "n": 1,
+          "codigo": "EC-RJ-156185",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "IMBABURA IBARRA",
+          "tipo": "Casa",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "22,774.86",
+          "avaluo_calculado": "22,774.86 (100%)"
+        },
+        {
+          "n": 2,
+          "codigo": "EC-RJ-156979",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "MANABÍ MANTA",
+          "tipo": "Terreno",
+          "bienes": "1",
+          "senalamiento": "Segundo Señalamiento",
+          "avaluo_pericial": "448,272.98",
+          "avaluo_calculado": "448,272.98 (100%)"
+        },
+        {
+          "n": 3,
+          "codigo": "EC-RJ-156991",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "LOJA LOJA",
+          "tipo": "Terreno",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "71,430.30",
+          "avaluo_calculado": "71,430.30 (100%)"
+        },
+        {
+          "n": 4,
+          "codigo": "EC-RJ-157127",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "TUNGURAHUA AMBATO",
+          "tipo": "Casa",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "39,144.65",
+          "avaluo_calculado": "39,144.65 (100%)"
+        },
+        {
+          "n": 5,
+          "codigo": "EC-RJ-157266",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "MANABÍ MONTECRISTI",
+          "tipo": "Casa",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "53,986.04",
+          "avaluo_calculado": "53,986.04 (100%)"
+        },
+        {
+          "n": 6,
+          "codigo": "EC-RJ-157465",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "AZUAY SANTA ISABEL",
+          "tipo": "Derechos y Acciones",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "20,034.46",
+          "avaluo_calculado": "20,034.46 (100%)"
+        },
+        {
+          "n": 7,
+          "codigo": "EC-RJ-157519",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "SANTO DOMINGO TSACHILAS SANTO DOMINGO",
+          "tipo": "Casa",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "102,011.67",
+          "avaluo_calculado": "102,011.67 (100%)"
+        },
+        {
+          "n": 8,
+          "codigo": "EC-RJ-157664",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "MANABÍ FLAVIO ALFARO",
+          "tipo": "Terreno",
+          "bienes": "1",
+          "senalamiento": "Tercer Señalamiento",
+          "avaluo_pericial": "7,280.38",
+          "avaluo_calculado": "5,460.29 (75%)"
+        },
+        {
+          "n": 9,
+          "codigo": "EC-RJ-157705",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "LOJA LOJA",
+          "tipo": "Terreno",
+          "bienes": "1",
+          "senalamiento": "Primer Señalamiento",
+          "avaluo_pericial": "40,672.00",
+          "avaluo_calculado": "40,672.00 (100%)"
+        },
+        {
+          "n": 10,
+          "codigo": "EC-RJ-157798",
+          "fecha_remate": "nov, 16 2026",
+          "localizacion": "IMBABURA OTAVALO",
+          "tipo": "Casa",
+          "bienes": "1",
+          "senalamiento": "Tercer Señalamiento",
+          "avaluo_pericial": "113,860.76",
+          "avaluo_calculado": "85,395.57 (75%)"
+        }
+      ]
+    }
+  ],
+  "generado": null
+}

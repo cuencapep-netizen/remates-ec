@@ -1,0 +1,32 @@
+[
+  {
+    "categoria": "Mueble",
+    "subtipo": "Vehículo",
+    "paginas": 14,
+    "aprox": 140
+  },
+  {
+    "categoria": "Mueble",
+    "subtipo": "Derechos y Acciones",
+    "paginas": 1,
+    "aprox": 10
+  },
+  {
+    "categoria": "Mueble",
+    "subtipo": "Lote",
+    "paginas": 1,
+    "aprox": 10
+  },
+  {
+    "categoria": "Inmueble",
+    "subtipo": "Urbano",
+    "paginas": 20,
+    "aprox": 200
+  },
+  {
+    "categoria": "Inmueble",
+    "subtipo": "Rural",
+    "paginas": 20,
+    "aprox": 200
+  }
+]

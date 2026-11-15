@@ -1,0 +1,26 @@
+# Datos locales (base, fotos, perfil del navegador, logs)
+datos/
+
+# Dependencias instaladas localmente
+vendor/
+.buildtools/
+.pipcache/
+
+# Salidas de compilacion (incluye el zip portable, que no se versiona)
+build/
+dist/
+
+# Restos del intento de version portable
+herramientas/portable/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Editores y sistema
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

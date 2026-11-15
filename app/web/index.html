@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Remates Judiciales EC</title>
+<link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+<header class="barra">
+  <div class="marca">
+    <div class="logo">RJ</div>
+    <div>
+      <h1>Remates Judiciales</h1>
+      <p>Función Judicial del Ecuador · copia local</p>
+    </div>
+  </div>
+  <div class="acciones-barra">
+    <span id="chipEstado" class="chip">sin datos</span>
+    <button id="btnSync" class="btn primario">Actualizar datos</button>
+  </div>
+</header>
+
+<div id="progreso" class="progreso oculto">
+  <div class="progreso-texto"><span id="progresoTexto">Sincronizando…</span><span id="progresoPct">0%</span></div>
+  <div class="barra-fondo"><div id="progresoBarra" class="barra-relleno"></div></div>
+</div>
+
+<section class="panel-filtros">
+  <div class="fila">
+    <input id="q" class="buscador" type="search" placeholder="Buscar por código, tipo, provincia, cantón…" />
+    <select id="categoria"><option value="">Todas las categorías</option></select>
+    <select id="subtipo"><option value="">Todos los subtipos</option></select>
+    <select id="provincia"><option value="">Todas las provincias</option></select>
+    <select id="orden">
+      <option value="fecha">Fecha (próximos primero)</option>
+      <option value="fecha_desc">Fecha (más lejanos)</option>
+      <option value="avaluo">Mayor avalúo</option>
+      <option value="codigo">Código</option>
+    </select>
+  </div>
+  <div class="fila secundaria">
+    <label class="campo">Desde <input id="desde" type="date" /></label>
+    <label class="campo">Hasta <input id="hasta" type="date" /></label>
+    <span class="nota">Solo remates vigentes · sin históricos, bloqueados ni inhabilitados</span>
+    <span class="crece"></span>
+    <span id="contador" class="contador">0 remates</span>
+    <button id="btnCsv" class="btn">CSV</button>
+    <button id="btnXlsx" class="btn">Excel</button>
+  </div>
+</section>
+
+<main>
+  <div class="tabla-envoltura">
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Código</th><th>Fecha remate</th><th>Categoría</th><th>Ubicación</th>
+          <th>Tipo</th><th>Señalamiento</th><th class="der">Avalúo</th><th></th>
+        </tr>
+      </thead>
+      <tbody id="cuerpo"></tbody>
+    </table>
+    <div id="vacio" class="vacio oculto">
+      <p>Todavía no hay datos.</p>
+      <p class="suave">Pulsa <b>Actualizar datos</b> para descargar los remates del portal.</p>
+    </div>
+  </div>
+  <div class="mas"><button id="btnMas" class="btn oculto">Mostrar más</button></div>
+</main>
+
+<aside id="cajon" class="cajon">
+  <div class="cajon-cab">
+    <div>
+      <h2 id="detCodigo">—</h2>
+      <p id="detSub" class="suave"></p>
+    </div>
+    <button id="cerrar" class="btn icono" title="Cerrar">✕</button>
+  </div>
+  <div class="cajon-cuerpo">
+    <div id="detFoto" class="foto"><div class="cargando">cargando foto…</div></div>
+    <dl id="detCampos" class="campos"></dl>
+    <p id="detDesc" class="descripcion"></p>
+  </div>
+</aside>
+<div id="velo" class="velo oculto"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

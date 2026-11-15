@@ -1,0 +1,129 @@
+:root {
+  --tinta: #0f172a;
+  --tinta-suave: #64748b;
+  --borde: #e2e8f0;
+  --fondo: #f6f8fb;
+  --blanco: #ffffff;
+  --acento: #1d4ed8;
+  --acento-suave: #e8efff;
+  --ok: #0f766e;
+  --alerta: #b45309;
+  --radio: 12px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--fondo);
+  color: var(--tinta);
+  font-size: 14px;
+}
+
+/* ---------- barra superior ---------- */
+.barra {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; padding: 14px 22px; background: var(--blanco);
+  border-bottom: 1px solid var(--borde); position: sticky; top: 0; z-index: 20;
+}
+.marca { display: flex; align-items: center; gap: 12px; }
+.logo {
+  width: 38px; height: 38px; border-radius: 10px; background: var(--acento);
+  color: #fff; display: grid; place-items: center; font-weight: 700; letter-spacing: .5px;
+}
+.marca h1 { font-size: 16px; margin: 0; }
+.marca p { margin: 0; font-size: 12px; color: var(--tinta-suave); }
+.acciones-barra { display: flex; align-items: center; gap: 10px; }
+
+.chip {
+  font-size: 12px; padding: 6px 10px; border-radius: 999px;
+  background: #eef2f7; color: var(--tinta-suave); white-space: nowrap; cursor: pointer;
+}
+.chip.ok { background: #e6f6f3; color: var(--ok); }
+.chip.nuevo { background: #fff4e5; color: var(--alerta); font-weight: 600; }
+
+.btn {
+  border: 1px solid var(--borde); background: var(--blanco); color: var(--tinta);
+  padding: 8px 14px; border-radius: 9px; cursor: pointer; font-size: 13px;
+  transition: .15s; font-family: inherit;
+}
+.btn:hover { border-color: #c7d2e2; background: #fbfdff; }
+.btn.primario { background: var(--acento); border-color: var(--acento); color: #fff; font-weight: 600; }
+.btn.primario:hover { background: #1a45c0; }
+.btn.primario:disabled { opacity: .6; cursor: default; }
+.btn.icono { padding: 6px 10px; }
+
+/* ---------- progreso ---------- */
+.progreso { padding: 10px 22px; background: #fff; border-bottom: 1px solid var(--borde); }
+.progreso-texto { display: flex; justify-content: space-between; font-size: 12px; color: var(--tinta-suave); margin-bottom: 6px; }
+.barra-fondo { height: 6px; background: #e9eef6; border-radius: 99px; overflow: hidden; }
+.barra-relleno { height: 100%; width: 0; background: var(--acento); transition: width .3s; }
+
+/* ---------- filtros ---------- */
+.panel-filtros { padding: 14px 22px 6px; display: grid; gap: 10px; }
+.fila { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.fila.secundaria { padding-bottom: 8px; }
+.buscador {
+  flex: 1 1 320px; min-width: 240px; padding: 10px 12px; border-radius: 10px;
+  border: 1px solid var(--borde); background: #fff; font-size: 14px; font-family: inherit;
+}
+.buscador:focus { outline: 2px solid var(--acento-suave); border-color: var(--acento); }
+select, input[type="date"] {
+  padding: 9px 10px; border-radius: 10px; border: 1px solid var(--borde);
+  background: #fff; font-size: 13px; font-family: inherit; color: var(--tinta);
+}
+.campo { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--tinta-suave); }
+.nota { font-size: 12px; color: var(--tinta-suave); }
+.interruptor { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+.crece { flex: 1; }
+.contador { font-size: 12px; color: var(--tinta-suave); }
+
+/* ---------- tabla ---------- */
+main { padding: 6px 22px 30px; }
+.tabla-envoltura { background: #fff; border: 1px solid var(--borde); border-radius: var(--radio); overflow: hidden; }
+.tabla { width: 100%; border-collapse: collapse; }
+.tabla thead th {
+  position: sticky; top: 0; background: #f9fbfe; text-align: left; font-size: 11px;
+  text-transform: uppercase; letter-spacing: .06em; color: var(--tinta-suave);
+  padding: 10px 12px; border-bottom: 1px solid var(--borde); white-space: nowrap;
+}
+.tabla td { padding: 10px 12px; border-bottom: 1px solid #eef2f7; vertical-align: middle; }
+.tabla tbody tr { cursor: pointer; }
+.tabla tbody tr:hover { background: #f7faff; }
+.cod { font-weight: 600; font-variant-numeric: tabular-nums; }
+.der { text-align: right; }
+.monto { font-variant-numeric: tabular-nums; font-weight: 600; }
+.pct { font-size: 11px; color: var(--tinta-suave); font-weight: 400; }
+.etiqueta {
+  display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 11px;
+  background: var(--acento-suave); color: var(--acento); font-weight: 600;
+}
+.etiqueta.mueble { background: #e6f6f3; color: var(--ok); }
+.fecha { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.vencido { color: #94a3b8; }
+.suave { color: var(--tinta-suave); }
+.vacio { padding: 50px 20px; text-align: center; }
+.mas { text-align: center; padding: 18px 0 0; }
+.oculto { display: none !important; }
+
+/* ---------- cajón de detalle ---------- */
+.cajon {
+  position: fixed; top: 0; right: 0; height: 100%; width: 480px; max-width: 92vw;
+  background: #fff; border-left: 1px solid var(--borde); box-shadow: -20px 0 50px rgba(15,23,42,.12);
+  transform: translateX(102%); transition: transform .25s ease; z-index: 40;
+  display: flex; flex-direction: column;
+}
+.cajon.abierto { transform: translateX(0); }
+.cajon-cab { display: flex; justify-content: space-between; align-items: flex-start; padding: 16px 18px; border-bottom: 1px solid var(--borde); }
+.cajon-cab h2 { margin: 0 0 2px; font-size: 18px; }
+.cajon-cab p { margin: 0; font-size: 12px; }
+.cajon-cuerpo { padding: 16px 18px 30px; overflow-y: auto; }
+.foto { background: #f1f5f9; border-radius: var(--radio); min-height: 200px; display: grid; place-items: center; overflow: hidden; margin-bottom: 16px; }
+.foto img { width: 100%; display: block; }
+.cargando { color: var(--tinta-suave); font-size: 12px; padding: 40px; }
+.campos { display: grid; grid-template-columns: 150px 1fr; gap: 8px 12px; margin: 0 0 16px; }
+.campos dt { color: var(--tinta-suave); font-size: 12px; }
+.campos dd { margin: 0; font-size: 13px; }
+.descripcion { font-size: 13px; line-height: 1.55; background: #f8fafc; border-radius: 10px; padding: 12px; }
+.velo { position: fixed; inset: 0; background: rgba(15,23,42,.25); z-index: 30; }
